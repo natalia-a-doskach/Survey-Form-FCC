@@ -1,0 +1,18 @@
+:root{--lightgray: #E5E5E5;}
+h1 {color: pink;}
+
+
+body{
+  background-color:var(--lightgray);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 40px;
+}
+
+div {
+  background-color: #FFF;
+}
+
+#textCard {
+  grid-column: span 2;
+}
