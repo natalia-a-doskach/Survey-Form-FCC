@@ -24,13 +24,35 @@ div {
   background-color: #FFF;
 }
 figure{
-  margin:10px 10px 30px 10px;
-  overflow:hidden;
-  background-color:gray; /*FIX*/
+  margin:10px 10px 40px 10px;
+}
+img{
+  object-fit: cover;
+  width: 100%;
 }
 
 #textCard {
   grid-column: span 2;
+}
+
+h1{
+  font-family: 'Roboto', sans-serif;
+font-weight: bold;
+margin:5px;
+margin-left: 10px;
+
+font-size: 24px;
+text-transform: uppercase;
+color: #A862A0;}
+
+h2{
+  font-family: 'Roboto', sans-serif;
+/*font-weight: bold;*/
+margin: 5px;
+margin-left: 10px;
+font-size: 12px;
+text-transform: uppercase;
+color: rgba(107, 101, 101, 0.8);
 }
 
 /*media q*/
@@ -39,19 +61,37 @@ figure{
     grid-template-columns: repeat(2, 1fr);
     margin:10px;
   }
+  h1{
+    font-size:24px;
+  }
+  h2{
+    font-size:12px;
+  }
   #textCard{
     grid-row:1/2;
   }
 }
 
-@media (max-width:759px) and (min-width:481px) {
+@media (max-width:999px) and (min-width:481px) {
   main {
     grid-template-columns: repeat(4, 1fr);
   }
+  h1{
+    font-size:36px;
+  }
+  h2{
+    font-size:18px;
+  }
 }
 
-@media (min-width: 760px){
+@media (min-width: 1000px){
   main {
     grid-template-columns: repeat(5, 1fr);
   }
-} */
+  h1{
+    font-size:48px;
+  }
+  h2{
+    font-size:24px;
+  }
+}
