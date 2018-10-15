@@ -1,18 +1,57 @@
-:root{--lightgray: #E5E5E5;}
-h1 {color: pink;}
+:root {
+  --lightgray: #E5E5E5;
+}
 
+h1 {
+  color: pink;
+}
 
-body{
-  background-color:var(--lightgray);
+body {
+  background-color: var(--lightgray);
+  padding: 0px;
+  margin: 0px;
+}
+
+main {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 40px;
+  grid-gap: 10px;
+
+  /*  grid-template-columns & rows in mediaq */
+  /*  margin in MQ */
 }
 
 div {
   background-color: #FFF;
 }
+figure{
+  margin:10px 10px 30px 10px;
+  overflow:hidden;
+  background-color:gray; /*FIX*/
+}
 
 #textCard {
   grid-column: span 2;
 }
+
+/*media q*/
+@media (max-width: 480px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    margin:10px;
+  }
+  #textCard{
+    grid-row:1/2;
+  }
+}
+
+@media (max-width:759px) and (min-width:481px) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 760px){
+  main {
+    grid-template-columns: repeat(5, 1fr);
+  }
+} */
