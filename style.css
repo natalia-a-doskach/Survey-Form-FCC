@@ -47,7 +47,6 @@ color: #A862A0;}
 
 h2{
   font-family: 'Roboto', sans-serif;
-/*font-weight: bold;*/
 margin: 5px;
 margin-left: 10px;
 font-size: 12px;
@@ -93,5 +92,17 @@ color: rgba(107, 101, 101, 0.8);
   }
   h2{
     font-size:24px;
+  }
+}
+
+/*animation*/
+.violet:hover{
+  animation-name:flip;
+  animation-duration:2s;
+  animation-fill-mode: forwards;
+}
+@keyframes flip {
+  100% {
+  opacity:0;  }
   }
 }
