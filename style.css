@@ -14,7 +14,7 @@ body {
 
 main {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 15px;
 
   /*  grid-template-columns & rows in mediaq */
   /*  margin in MQ */
@@ -25,6 +25,7 @@ div {
   background-size: 50% 50%;
   background-repeat:no-repeat;
   background-position: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 figure{
   margin:10px 10px 40px 10px;
@@ -36,7 +37,7 @@ img{
 
 #textCard {
   grid-column: span 2;
-}
+  padding:20px;}
 
 #support{
   background-image: url(pictures/supportsMe.svg);
@@ -66,8 +67,22 @@ h2{
 margin: 5px;
 margin-left: 10px;
 font-size: 12px;
+font-weight: lighter;
 text-transform: uppercase;
 color: rgba(107, 101, 101, 0.8);
+}
+
+
+p{
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(107, 101, 101, 0.8);
+  text-align:right;
+  margin-right:5px;
+}
+
+a{
+  color: #369FCD;
 }
 
 /*media q*/
@@ -96,6 +111,10 @@ color: rgba(107, 101, 101, 0.8);
   }
   h2{
     font-size:18px;
+  }
+  #textCard{
+    grid-row:1/2;
+    grid-column:1/3;
   }
 }
 
