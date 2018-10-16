@@ -22,6 +22,9 @@ main {
 
 div {
   background-color: #FFF;
+  background-size: 50% 50%;
+  background-repeat:no-repeat;
+  background-position: center;
 }
 figure{
   margin:10px 10px 40px 10px;
@@ -33,6 +36,19 @@ img{
 
 #textCard {
   grid-column: span 2;
+}
+
+#support{
+  background-image: url(pictures/supportsMe.svg);
+}
+#goals{
+    background-image: url(pictures/goals.svg);
+}
+#changes{
+    background-image: url(pictures/changes.svg);
+}
+#positive{
+    background-image: url(pictures/positive.svg);
 }
 
 h1{
